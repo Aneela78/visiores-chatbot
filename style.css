@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b1623;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #00bfff;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    background-color: #102030;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.search-button {
+    background-color: #00bfff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #009ccc;
+}
+
+/* Loading */
+.loading {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Results */
+.results-header {
+    margin-bottom: 10px;
+}
+
+#resultsCount {
+    font-style: italic;
+    color: #00bfff;
+}
+
+.results-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.result-item {
+    background-color: #152230;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.result-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+.result-authors,
+.result-abstract {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.result-similarity {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #88f288;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #301020;
+    padding: 20px;
+    border-left: 5px solid #ff4c4c;
+    border-radius: 10px;
+    color: #ffbcbc;
+}

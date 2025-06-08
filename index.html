@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VISIORES 1.0</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">VISIORES 1.0</h1>
+
+        <form id="searchForm" class="search-box">
+            <input id="searchInput" type="text" placeholder="Enter prompt" />
+            <button type="submit" class="search-button">▶</button>
+        </form>
+
+        <div id="loading" class="loading">Loading...</div>
+
+        <div id="resultsHeader" class="results-header" style="display: none;">
+            <h2>Search Results</h2>
+            <p id="resultsCount"></p>
+        </div>
+
+        <div id="resultsList" class="results-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
